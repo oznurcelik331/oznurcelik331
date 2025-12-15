@@ -1,0 +1,165 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight, Building2, Users, Award, CheckCircle } from 'lucide-react';
+
+const Home = () => {
+  const projects = [
+    {
+      image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg',
+      title: 'Taş Villa Projesi 1',
+      location: 'İzmir',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg',
+      title: 'Modern Taş Ev',
+      location: 'Bodrum',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg',
+      title: 'Lüks Villa Kompleksi',
+      location: 'Çeşme',
+    },
+  ];
+
+  const features = [
+    {
+      icon: <Building2 size={32} />,
+      title: 'Taş İnşaat Uzmanlığı',
+      description: 'Doğal taş kullanarak çevre dostu ve dayanıklı yapılar inşa ediyoruz.',
+    },
+    {
+      icon: <Users size={32} />,
+      title: 'Uzman Kadro',
+      description: '20+ yıllık tecrüeye sahip mimarlık ve mühendislik ekibimiz.',
+    },
+    {
+      icon: <Award size={32} />,
+      title: 'Kalite Garantisi',
+      description: 'Her projede en yüksek kalite standartlarını uyguluyoruz.',
+    },
+  ];
+
+  return (
+    <div className="home-page" data-testid="home-page">
+      {/* Hero Section */}
+      <section className="relative h-[90vh] overflow-hidden" data-testid="hero-section">
+        <img
+          src="https://images.unsplash.com/photo-1548386704-23fc0135faab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85"
+          alt="Kozsağ Group"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 hero-gradient" />
+        <div className="relative container mx-auto px-6 md:px-12 h-full flex items-center">
+          <div className="max-w-3xl text-white">
+            <p className="font-sans text-sm uppercase tracking-widest text-accent font-bold mb-6" data-testid="hero-caption">
+              Doğal Taş İnşaat
+            </p>
+            <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6" data-testid="hero-title">
+              Miraslar İnşa Ediyoruz
+            </h1>
+            <p className="font-sans text-base md:text-lg leading-relaxed mb-8 opacity-90" data-testid="hero-description">
+              Kozsağ Group olarak, doğal taş ve modern mühendisliği birleştirerek,
+              nesiller boyu devam edecek prestijli yapılar oluşturuyoruz.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/projeler" data-testid="hero-projects-button">
+                <button className="btn-accent hover-lift flex items-center gap-2">
+                  Projelerimizi İnceleyin
+                  <ArrowRight size={20} />
+                </button>
+              </Link>
+              <Link to="/iletisim" data-testid="hero-contact-button">
+                <button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
+                  İletişime Geçin
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-24 bg-white" data-testid="features-section">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <p className="font-sans text-sm uppercase tracking-widest text-accent font-bold mb-4">
+              Neden Biz?
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold tracking-tight text-primary">
+              Farkımız
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 border-l-4 border-accent card-shadow transition-hover hover:shadow-lg"
+                data-testid={`feature-card-${index}`}
+              >
+                <div className="text-accent mb-4">{feature.icon}</div>
+                <h3 className="font-serif text-2xl md:text-3xl font-medium text-primary mb-4">
+                  {feature.title}
+                </h3>
+                <p className="font-sans text-base text-muted leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Preview */}
+      <section className="py-24 bg-muted" data-testid="projects-preview-section">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <p className="font-sans text-sm uppercase tracking-widest text-accent font-bold mb-4">
+              Projelerimiz
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold tracking-tight text-primary">
+              Öne Çıkan İşlerimiz
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {projects.map((project, index) => (
+              <div key={index} className="project-card" data-testid={`project-preview-${index}`}>
+                <img src={project.image} alt={project.title} />
+                <div className="project-overlay">
+                  <h3 className="font-serif text-2xl font-medium mb-2">{project.title}</h3>
+                  <p className="font-sans text-sm opacity-90">{project.location}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link to="/projeler" data-testid="view-all-projects-button">
+              <button className="btn-primary hover-lift flex items-center gap-2 mx-auto">
+                Tüm Projeleri Gör
+                <ArrowRight size={20} />
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-primary text-white" data-testid="cta-section">
+        <div className="container mx-auto px-6 md:px-12 text-center">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+            Projenizi Birlikte Gerçekleştirelim
+          </h2>
+          <p className="font-sans text-base md:text-lg leading-relaxed mb-8 max-w-2xl mx-auto opacity-90">
+            Hayalinizdeki taş evi inşa etmek için hemen iletişime geçin.
+            Uzman ekibimiz size en iyi çözümleri sunmak için hazır.
+          </p>
+          <Link to="/iletisim" data-testid="cta-contact-button">
+            <button className="btn-accent hover-lift">
+              Teklif Alın
+            </button>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
