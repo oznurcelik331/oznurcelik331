@@ -2,45 +2,33 @@ const Projects = () => {
   const projects = [
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg',
-      title: 'Modern Taş Villa - İzmir',
-      description: 'Doğal taş ve ahşap detayların mükemmel uyumu',
-      area: '350 m²',
-      year: '2024',
     },
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg',
-      title: 'Taş Konut Kompleksi - Bodrum',
-      description: 'Çağdaş mimari ve geleneksel taş işçiliği',
-      area: '280 m²',
-      year: '2023',
     },
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg',
-      title: 'Lüks Villa - Çeşme',
-      description: 'Havuz ve peyzaj düzenlemesi dahil tam proje',
-      area: '450 m²',
-      year: '2024',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/td5or4px_4.jpeg',
     },
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/po3aigs4_5.jpeg',
-      title: 'Taş Villa - Kuşadası',
-      description: 'Ahşap çatı ve taş duvarlarla rustik şıklık',
-      area: '320 m²',
-      year: '2023',
     },
     {
-      image: 'https://images.unsplash.com/photo-1548386704-23fc0135faab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85',
-      title: 'Prestij Taş Konut - Alaçatı',
-      description: 'Deniz manzaralı lüks taş villa',
-      area: '500 m²',
-      year: '2024',
+      image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/ikfxog8t_6.jpeg',
     },
     {
-      image: 'https://images.unsplash.com/photo-1702432558737-86298f7f716a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85',
-      title: 'Çağdaş Taş Ev - Urla',
-      description: 'Minimalist tasarım ve doğal malzemeler',
-      area: '380 m²',
-      year: '2023',
+      image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/l6c0m3i6_7.jpeg',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/293dd07n_8.jpeg',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/fw4ua0ox_9.jpeg',
+    },
+    {
+      image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/bsh2npvc_10.jpeg',
     },
   ];
 
@@ -74,22 +62,9 @@ const Projects = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt="Kozsağ Group Taş Ev Projesi"
                     className="w-full h-full object-cover transition-smooth group-hover:scale-105"
                   />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-2xl font-medium text-primary mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="font-sans text-base text-muted mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="flex gap-4 font-sans text-sm text-accent font-medium">
-                    <span>{project.area}</span>
-                    <span>•</span>
-                    <span>{project.year}</span>
-                  </div>
                 </div>
               </div>
             ))}

@@ -121,12 +121,8 @@ const Home = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {projects.map((project, index) => (
-              <div key={index} className="project-card" data-testid={`project-preview-${index}`}>
-                <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <h3 className="font-serif text-2xl font-medium mb-2">{project.title}</h3>
-                  <p className="font-sans text-sm opacity-90">{project.location}</p>
-                </div>
+              <div key={index} className="project-card group" data-testid={`project-preview-${index}`}>
+                <img src={project.image} alt="Kozsağ Group Proje" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
