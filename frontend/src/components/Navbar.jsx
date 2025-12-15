@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,14 @@ export const Navbar = () => {
     <nav className="glass-nav sticky top-0 z-50" data-testid="main-navbar">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center" data-testid="logo-link">
-            <span className="font-serif text-2xl font-bold text-primary">Kozsağ Group</span>
+          <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
+            <div className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <Logo className="transition-all duration-300" />
+            </div>
+            <div>
+              <span className="font-serif text-2xl font-bold text-primary block leading-tight">Kozsağ Group</span>
+              <span className="font-sans text-xs text-accent uppercase tracking-widest">İnşaat</span>
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import ChatbotWidget from './components/ChatbotWidget';
 import { Toaster } from './components/ui/sonner';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
         <ChatbotWidget />
         <Toaster />
       </BrowserRouter>
