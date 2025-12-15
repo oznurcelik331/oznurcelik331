@@ -45,27 +45,36 @@ const Home = () => {
         <div className="relative container mx-auto px-6 md:px-12 h-full flex items-center">
           <div className="max-w-3xl text-white">
             <p className="font-sans text-sm uppercase tracking-widest text-accent font-bold mb-6" data-testid="hero-caption">
-              Doğal Taş İnşaat
+              İkamet Amaçlı Binalarda
             </p>
             <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6" data-testid="hero-title">
-              Miraslar İnşa Ediyoruz
+              Anahtar Teslim Profesyonel İnşaat Çözümleri
             </h1>
             <p className="font-sans text-base md:text-lg leading-relaxed mb-8 opacity-90" data-testid="hero-description">
-              Kozsağ Group olarak, doğal taş ve modern mühendisliği birleştirerek,
-              nesiller boyu devam edecek prestijli yapılar oluşturuyoruz.
+              KOZSAĞ GROUP; taş evler, müstakil konutlar ve apartman projelerinde; 
+              tasarım aşamasından anahtar teslimine kadar tüm süreci tek elden ve şeffaf yönetir.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/projeler" data-testid="hero-projects-button">
-                <button className="btn-accent hover-lift flex items-center gap-2">
-                  Projelerimizi İnceleyin
-                  <ArrowRight size={20} />
-                </button>
-              </Link>
               <Link to="/iletisim" data-testid="hero-contact-button">
-                <button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
-                  İletişime Geçin
+                <button className="btn-accent hover-lift">
+                  Ücretsiz Keşif Talep Et
                 </button>
               </Link>
+              <Link to="/iletisim" data-testid="hero-quote-button">
+                <button className="btn-secondary text-white border-white hover:bg-white hover:text-primary">
+                  Teklif Al
+                </button>
+              </Link>
+              <a 
+                href="https://wa.me/905448526371" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-testid="hero-whatsapp-button"
+              >
+                <button className="btn-secondary text-white border-white hover:bg-white hover:text-primary flex items-center gap-2">
+                  WhatsApp Anında Destek
+                </button>
+              </a>
             </div>
           </div>
         </div>
