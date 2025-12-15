@@ -39,17 +39,17 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin size={24} />,
+      icon: <MapPin size={24} strokeWidth={1.5} />,
       title: 'Adres',
       content: 'Yaya Mah. E-87 Karayolu Kenarı Sk. No: 31/B İç Kapı No: 14 Gömeç/Balıkesir',
     },
     {
-      icon: <Phone size={24} />,
+      icon: <Phone size={24} strokeWidth={1.5} />,
       title: 'Telefon',
       content: '0 544 852 63 71 / 0 554 852 63 51 / 0 537 330 04 42',
     },
     {
-      icon: <Mail size={24} />,
+      icon: <Mail size={24} strokeWidth={1.5} />,
       title: 'E-posta',
       content: 'info@kozsaggroup.com',
     },
@@ -58,64 +58,66 @@ const Contact = () => {
   return (
     <div className="contact-page" data-testid="contact-page">
       {/* Hero */}
-      <section className="relative h-[50vh] overflow-hidden bg-primary" data-testid="contact-hero">
-        <div className="absolute inset-0 noise-texture" />
-        <div className="relative container mx-auto px-6 md:px-12 h-full flex items-center">
-          <div className="max-w-3xl text-white">
-            <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none mb-6" data-testid="contact-title">
-              İletişim
-            </h1>
-            <p className="font-sans text-base md:text-lg leading-relaxed opacity-90">
-              Size nasıl yardımcı olabiliriz? Bize ulaşın.
-            </p>
-          </div>
+      <section className="relative py-32 md:py-40 bg-primary" data-testid="contact-hero">
+        <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+          <p className="text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold mb-8">
+            BAĞLANTI
+          </p>
+          <h1 className="text-6xl md:text-8xl font-serif tracking-tight leading-[0.9] text-white mb-8" data-testid="contact-title">
+            İletişim
+          </h1>
+          <p className="text-base md:text-lg font-sans leading-relaxed text-white/80 max-w-2xl mx-auto">
+            Size nasıl yardımcı olabiliriz?
+          </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-muted" data-testid="contact-section">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="py-32 md:py-40 bg-muted" data-testid="contact-section">
+        <div className="container mx-auto px-6 md:px-12 lg:px-24">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Contact Info */}
             <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-primary mb-8">
+              <h2 className="text-4xl md:text-5xl font-serif tracking-tight text-primary mb-16">
                 Bize Ulaşın
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-8">
                 {contactInfo.map((info, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 bg-white p-6 card-shadow"
+                    className="flex items-start gap-6"
                     data-testid={`contact-info-${index}`}
                   >
-                    <div className="text-accent flex-shrink-0">{info.icon}</div>
+                    <div className="text-accent flex-shrink-0 mt-1">{info.icon}</div>
                     <div>
-                      <div className="font-sans text-sm uppercase tracking-widest text-accent font-bold mb-1">
+                      <div className="text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold mb-2">
                         {info.title}
                       </div>
-                      <div className="font-sans text-base text-primary">{info.content}</div>
+                      <div className="text-base font-sans text-primary leading-relaxed">{info.content}</div>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="mt-8 p-6 bg-accent text-white">
-                <h3 className="font-serif text-xl font-medium mb-2">Çalışma Saatleri</h3>
-                <p className="font-sans text-sm opacity-90">Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p className="font-sans text-sm opacity-90">Cumartesi: 09:00 - 14:00</p>
-                <p className="font-sans text-sm opacity-90">Pazar: Kapalı</p>
+              <div className="mt-12 p-8 bg-accent text-white">
+                <h3 className="text-xl font-serif font-medium mb-4">Çalışma Saatleri</h3>
+                <div className="space-y-2 text-sm font-sans">
+                  <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                  <p>Cumartesi: 09:00 - 14:00</p>
+                  <p>Pazar: Kapalı</p>
+                </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 card-shadow">
-              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-primary mb-6">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-serif tracking-tight text-primary mb-12">
                 Mesaj Gönderin
               </h2>
               <form onSubmit={handleSubmit} data-testid="contact-form">
-                <div className="space-y-4">
+                <div className="space-y-8">
                   <div>
-                    <label htmlFor="name" className="block font-sans text-sm font-medium text-primary mb-2">
-                      Adınız Soyadınız *
+                    <label htmlFor="name" className="block text-xs font-sans uppercase tracking-[0.2em] text-primary font-bold mb-4">
+                      Adınız Soyadınız
                     </label>
                     <input
                       type="text"
@@ -124,13 +126,13 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full p-3 border border-gray-300 focus:outline-none focus:border-accent transition-hover"
+                      className="w-full bg-transparent border-b border-stone-300 focus:border-accent px-0 py-4 rounded-none outline-none transition-colors placeholder:text-stone-400"
                       data-testid="contact-form-name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block font-sans text-sm font-medium text-primary mb-2">
-                      E-posta *
+                    <label htmlFor="email" className="block text-xs font-sans uppercase tracking-[0.2em] text-primary font-bold mb-4">
+                      E-posta
                     </label>
                     <input
                       type="email"
@@ -139,13 +141,13 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full p-3 border border-gray-300 focus:outline-none focus:border-accent transition-hover"
+                      className="w-full bg-transparent border-b border-stone-300 focus:border-accent px-0 py-4 rounded-none outline-none transition-colors placeholder:text-stone-400"
                       data-testid="contact-form-email"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block font-sans text-sm font-medium text-primary mb-2">
-                      Telefon *
+                    <label htmlFor="phone" className="block text-xs font-sans uppercase tracking-[0.2em] text-primary font-bold mb-4">
+                      Telefon
                     </label>
                     <input
                       type="tel"
@@ -154,13 +156,13 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full p-3 border border-gray-300 focus:outline-none focus:border-accent transition-hover"
+                      className="w-full bg-transparent border-b border-stone-300 focus:border-accent px-0 py-4 rounded-none outline-none transition-colors placeholder:text-stone-400"
                       data-testid="contact-form-phone"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block font-sans text-sm font-medium text-primary mb-2">
-                      Mesajınız *
+                    <label htmlFor="message" className="block text-xs font-sans uppercase tracking-[0.2em] text-primary font-bold mb-4">
+                      Mesajınız
                     </label>
                     <textarea
                       id="message"
@@ -169,17 +171,17 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full p-3 border border-gray-300 focus:outline-none focus:border-accent transition-hover resize-none"
+                      className="w-full bg-transparent border-b border-stone-300 focus:border-accent px-0 py-4 rounded-none outline-none transition-colors placeholder:text-stone-400 resize-none"
                       data-testid="contact-form-message"
                     />
                   </div>
                   <button
                     type="submit"
                     disabled={loading}
-                    className="btn-accent w-full hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="btn-primary w-full hover-lift disabled:opacity-50 disabled:cursor-not-allowed"
                     data-testid="contact-form-submit"
                   >
-                    {loading ? 'Gönderiliyor...' : 'Mesaj Gönder'}
+                    {loading ? 'GÖNDERİLİYOR...' : 'MESAJ GÖNDER'}
                   </button>
                 </div>
               </form>
