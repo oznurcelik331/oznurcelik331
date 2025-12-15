@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'sonner';
+import Logo from '../components/Logo';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -45,6 +46,9 @@ const Login = () => {
       <div className="max-w-md w-full">
         <div className="bg-white p-8 card-shadow">
           <div className="text-center mb-8">
+            <div className="flex justify-center mb-4">
+              <Logo className="w-16 h-16" />
+            </div>
             <h1 className="font-serif text-3xl font-bold text-primary mb-2" data-testid="login-title">
               Kozsağ Group
             </h1>

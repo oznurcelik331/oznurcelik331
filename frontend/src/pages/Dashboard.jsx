@@ -5,6 +5,7 @@ import { toast } from 'sonner';
 import { Users, Briefcase, FileText, TrendingUp, LogOut, Menu, X } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import Logo from '../components/Logo';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -94,6 +95,7 @@ const Dashboard = () => {
             >
               {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
+            <Logo className="w-8 h-8" />
             <h1 className="font-serif text-xl font-bold text-primary" data-testid="dashboard-title">
               Yönetim Paneli
             </h1>
