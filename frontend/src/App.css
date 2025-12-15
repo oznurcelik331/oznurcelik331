@@ -10,6 +10,8 @@ body {
   font-family: 'Manrope', sans-serif;
   background: #F5F5F0;
   color: #2D2D2D;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .font-serif {
@@ -20,6 +22,7 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
+/* Premium Color System */
 .bg-primary {
   background-color: #2D2D2D;
 }
@@ -48,142 +51,132 @@ body {
   color: #666666;
 }
 
-.noise-texture {
-  position: relative;
-}
-
-.noise-texture::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
-}
-
-.hero-gradient {
-  background: linear-gradient(to bottom, rgba(45,45,45,0.3), rgba(45,45,45,0.8));
-}
-
+/* Glass Navigation */
 .glass-nav {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.card-shadow {
-  box-shadow: 0 10px 30px -10px rgba(45, 45, 45, 0.1);
-}
-
-.floating-shadow {
-  box-shadow: 0 20px 40px -10px rgba(45, 45, 45, 0.2);
-}
-
-.transition-smooth {
-  transition: all 0.5s ease-out;
-}
-
-.transition-hover {
-  transition: all 0.3s ease-in-out;
-}
-
-.hover-lift:hover {
-  transform: translateY(-2px);
-}
-
-.btn-primary {
-  background-color: #2D2D2D;
-  color: white;
-  padding: 1rem 2rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  border: none;
-  cursor: pointer;
+  background: rgba(245, 245, 240, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(230, 226, 221, 0.5);
   transition: all 0.3s ease;
 }
 
+/* Premium Shadows */
+.card-shadow {
+  box-shadow: 0 20px 40px -15px rgba(45, 45, 45, 0.1);
+}
+
+.floating-shadow {
+  box-shadow: 0 30px 60px -15px rgba(45, 45, 45, 0.15);
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-hover {
+  transition: all 0.3s ease;
+}
+
+/* Premium Buttons */
+.btn-primary {
+  background-color: #2D2D2D;
+  color: white;
+  padding: 1.25rem 3rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
 .btn-primary:hover {
-  background-color: #1a1a1a;
+  background-color: #B87333;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  border: 1px solid #2D2D2D;
+  border: 1.5px solid #2D2D2D;
   color: #2D2D2D;
   background: transparent;
-  padding: 1rem 2rem;
+  padding: 1.25rem 3rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .btn-secondary:hover {
   background-color: #2D2D2D;
   color: white;
+  border-color: #2D2D2D;
 }
 
 .btn-accent {
   background-color: #B87333;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1.25rem 3rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(184, 115, 51, 0.2);
+  transition: all 0.4s ease;
 }
 
 .btn-accent:hover {
-  background-color: #A66529;
-  box-shadow: 0 6px 12px rgba(184, 115, 51, 0.3);
+  background-color: #8F5926;
+  transform: translateY(-2px);
 }
 
+/* Hero Section */
+.hero-overlay {
+  background: linear-gradient(to top, rgba(45, 45, 45, 0.7) 0%, transparent 60%);
+}
+
+.hero-image {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Project Gallery */
 .project-card {
   position: relative;
   overflow: hidden;
-  background: #F5F5F0;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/4;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.project-card:hover {
-  box-shadow: 0 20px 40px -10px rgba(45, 45, 45, 0.2);
+  transition: all 0.4s ease;
 }
 
 .project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 .project-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-.project-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(45,45,45,0.9), transparent);
-  padding: 2rem;
-  color: white;
-  transform: translateY(100%);
-  transition: transform 0.5s ease;
+.project-card:hover {
+  box-shadow: 0 30px 60px -15px rgba(45, 45, 45, 0.2);
 }
 
-.project-card:hover .project-overlay {
-  transform: translateY(0);
-}
-
+/* Chatbot */
 .chatbot-widget {
   position: fixed;
   bottom: 2rem;
@@ -192,13 +185,13 @@ body {
 }
 
 .chatbot-button {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  background-color: #B87333;
+  background-color: #2D2D2D;
   color: white;
   border: none;
-  box-shadow: 0 4px 12px rgba(184, 115, 51, 0.4);
+  box-shadow: 0 8px 24px rgba(45, 45, 45, 0.2);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -207,23 +200,45 @@ body {
 }
 
 .chatbot-button:hover {
-  background-color: #A66529;
-  box-shadow: 0 6px 16px rgba(184, 115, 51, 0.5);
+  background-color: #B87333;
   transform: scale(1.05);
 }
 
 .chatbot-window {
   position: fixed;
-  bottom: 6rem;
+  bottom: 7rem;
   right: 2rem;
-  width: 380px;
-  height: 500px;
+  width: 400px;
+  height: 550px;
   background: white;
-  border-radius: 4px;
-  box-shadow: 0 20px 40px -10px rgba(45, 45, 45, 0.3);
+  border-radius: 0;
+  box-shadow: 0 30px 60px -15px rgba(45, 45, 45, 0.2);
   display: flex;
   flex-direction: column;
   z-index: 999;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Section Dividers */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #E6E2DD, transparent);
+}
+
+/* Premium Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 @media (max-width: 768px) {
@@ -231,6 +246,6 @@ body {
     width: calc(100vw - 2rem);
     height: 70vh;
     right: 1rem;
-    bottom: 5rem;
+    bottom: 6rem;
   }
 }
