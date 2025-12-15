@@ -28,14 +28,24 @@ const Home = () => {
 
   return (
     <div className="home-page" data-testid="home-page">
-      {/* Hero Section - Full Screen */}
+      {/* Hero Section - Full Screen with Video */}
       <section className="relative h-screen overflow-hidden flex items-end" data-testid="hero-section">
         <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg"
-            alt="KOZSAĞ GROUP"
-            className="w-full h-full object-cover hero-image"
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.85) contrast(1.1)' }}
+          >
+            <source src="https://customer-assets.emergentagent.com/job_insaatech/artifacts/bsrk8xt9_24.mp4" type="video/mp4" />
+            <img
+              src="https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg"
+              alt="KOZSAĞ GROUP"
+              className="w-full h-full object-cover"
+            />
+          </video>
         </div>
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative container mx-auto px-6 md:px-12 lg:px-24 pb-24 z-10">
