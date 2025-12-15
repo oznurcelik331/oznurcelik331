@@ -5,18 +5,12 @@ const Home = () => {
   const projects = [
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg',
-      title: 'Taş Villa Projesi 1',
-      location: 'İzmir',
     },
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg',
-      title: 'Modern Taş Ev',
-      location: 'Bodrum',
     },
     {
       image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg',
-      title: 'Lüks Villa Kompleksi',
-      location: 'Çeşme',
     },
   ];
 
