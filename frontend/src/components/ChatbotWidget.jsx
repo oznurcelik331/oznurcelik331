@@ -65,17 +65,17 @@ export const ChatbotWidget = () => {
     <div className="chatbot-widget" data-testid="chatbot-widget">
       {isOpen && (
         <div className="chatbot-window" data-testid="chatbot-window">
-          <div className="bg-accent text-white p-4 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <MessageCircle size={20} />
-              <span className="font-medium">Kozsağ Asistan</span>
+          <div className="bg-primary text-white p-6 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <MessageCircle size={22} strokeWidth={1.5} />
+              <span className="font-sans text-sm uppercase tracking-widest font-medium">KOZSAĞ Concierge</span>
             </div>
             <button
               onClick={() => setIsOpen(false)}
               className="hover:opacity-80 transition-hover"
               data-testid="close-chat-button"
             >
-              <X size={20} />
+              <X size={22} strokeWidth={1.5} />
             </button>
           </div>
 
