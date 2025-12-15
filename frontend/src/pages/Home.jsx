@@ -17,18 +17,18 @@ const Home = () => {
   const features = [
     {
       icon: <Building2 size={32} />,
-      title: 'Taş İnşaat Uzmanlığı',
-      description: 'Doğal taş kullanarak çevre dostu ve dayanıklı yapılar inşa ediyoruz.',
+      title: 'İkamet Amaçlı Konut ve Taş Ev Uzmanlığı',
+      description: 'Müstakil konutlar, taş evler ve apartman projelerinde anahtar teslim çözümler sunuyoruz.',
     },
     {
-      icon: <Users size={32} />,
-      title: 'Uzman Kadro',
-      description: '20+ yıllık tecrüeye sahip mimarlık ve mühendislik ekibimiz.',
+      icon: <CheckCircle size={32} />,
+      title: 'Şeffaf Bütçe ve Sözleşmeye Bağlı Yönetim',
+      description: 'Tüm süreçleri şeffaf bir şekilde yönetir, sözleşmeye tam bağlı kalırız.',
     },
     {
       icon: <Award size={32} />,
-      title: 'Kalite Garantisi',
-      description: 'Her projede en yüksek kalite standartlarını uyguluyoruz.',
+      title: 'Tek Elden Proje Yönetimi',
+      description: 'Tasarım aşamasından anahtar teslimine kadar tüm süreci tek elden yönetiyoruz.',
     },
   ];
 
