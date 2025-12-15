@@ -2,11 +2,11 @@ import { CheckCircle } from 'lucide-react';
 
 const About = () => {
   const values = [
-    'Kalite ve mükemmellik odaklı çalışma',
-    'Doğaya saygılı ve sürdürülebilir yaklaşım',
-    'Müşteri memnuniyeti önceliği',
-    'Yenilikçi tasarım ve mühendislik',
-    'Şeffaf ve dürüst iş ilişkileri',
+    'İkamet amaçlı binalarda uzmanlaşmış kadro',
+    'Taş ev mimarisi ve modern villa projelerinde tecrübe',
+    'Şeffaf ve sözleşmeye bağlı proje yönetimi',
+    'Temelden çatıya titiz işçilik',
+    'Doğayla uyumlu ve uzun ömürlü yaşam alanları',
   ];
 
   return (
@@ -40,18 +40,17 @@ const About = () => {
                 Hikayemiz
               </p>
               <h2 className="font-serif text-4xl md:text-5xl font-semibold tracking-tight text-primary mb-6">
-                Kozsağ Group İnşaat
+                Estetik ve Güvenin<br />Taş ve Modern Yapılardaki Yüzü
               </h2>
               <div className="space-y-4 font-sans text-base text-muted leading-relaxed">
                 <p>
-                  Kozsağ Group, 20 yılı aşkın süredir İzmir ve Çevresinde doğal taş inşaat sektöründe 
-                  öncü bir konumda faaliyet göstermektedir. Müstakil konutlar, lüks villalar ve çok katlı konut 
-                  binaları inşaatında uzmanlaşmış kadromuzla, her projede mükemmellik standartlarını yakaladık.
+                  KOZSAĞ GROUP İNŞAAT; ikamet amaçlı binaların inşaatında uzmanlaşmış, bölgenin güvenilir çözüm ortağıdır. 
+                  Özellikle taş ev mimarisi ve modern villa projelerinde, temelden çatıya kadar titiz bir işçilik sergiliyoruz.
                 </p>
                 <p>
-                  Doğal taşın zamana meydan okuyan gücünü modern mühendislik teknikleriyle birleştirerek, 
-                  sadece bir ev değil, bir miras inşa ediyoruz. Her proje, müşterilerimizin hayallerini 
-                  gerçeğe dönüştürme yolculuğumuzun bir parçasıdır.
+                  Mustafa Kozak ve Tahir Sağa liderliğindeki ekibimiz, proje planlamadan saha yönetimine, 
+                  malzeme seçiminden anahtar teslimine kadar tüm süreçleri şeffaf ve sözleşmeye bağlı şekilde yönetir. 
+                  Amacımız sadece bina yapmak değil, doğayla uyumlu ve uzun ömürlü yaşam alanları kurmaktır.
                 </p>
               </div>
             </div>
