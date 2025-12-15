@@ -19,8 +19,16 @@ const About = () => {
   return (
     <div className="about-page" data-testid="about-page">
       {/* Hero */}
-      <section className="relative py-32 md:py-40 bg-primary" data-testid="about-hero">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+      <section className="relative py-32 md:py-40 overflow-hidden" data-testid="about-hero">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/6285149/pexels-photo-6285149.jpeg"
+            alt="Kozsağ Group Ekip"
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.5)' }}
+          />
+        </div>
+        <div className="relative container mx-auto px-6 md:px-12 lg:px-24 text-center z-10">
           <p className="text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold mb-8">
             HİKAYEMİZ
           </p>

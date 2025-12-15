@@ -20,8 +20,16 @@ const Projects = () => {
   return (
     <div className="projects-page" data-testid="projects-page">
       {/* Hero */}
-      <section className="relative py-32 md:py-40 bg-primary" data-testid="projects-hero">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+      <section className="relative py-32 md:py-40 overflow-hidden" data-testid="projects-hero">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1661885965905-ca41f6448544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMGhvdXNlJTIwY29uc3RydWN0aW9uJTIwcHJvamVjdCUyMHZpbGxhJTIwYnVpbGRpbmclMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY1ODI5MTI5fDA&ixlib=rb-4.1.0&q=85"
+            alt="Taş Villa Projeleri"
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.5)' }}
+          />
+        </div>
+        <div className="relative container mx-auto px-6 md:px-12 lg:px-24 text-center z-10">
           <p className="text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold mb-8">
             PORTFOLYO
           </p>

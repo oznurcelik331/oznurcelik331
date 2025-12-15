@@ -58,8 +58,16 @@ const Contact = () => {
   return (
     <div className="contact-page" data-testid="contact-page">
       {/* Hero */}
-      <section className="relative py-32 md:py-40 bg-primary" data-testid="contact-hero">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+      <section className="relative py-32 md:py-40 overflow-hidden" data-testid="contact-hero">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1750768145390-f0ad18d3e65b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBjb250YWN0JTIwY29tbXVuaWNhdGlvbiUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWwlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzY1ODI5MTMxfDA&ixlib=rb-4.1.0&q=85"
+            alt="İletişim"
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.5)' }}
+          />
+        </div>
+        <div className="relative container mx-auto px-6 md:px-12 lg:px-24 text-center z-10">
           <p className="text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold mb-8">
             BAĞLANTI
           </p>
