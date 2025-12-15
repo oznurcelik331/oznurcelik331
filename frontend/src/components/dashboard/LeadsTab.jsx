@@ -23,7 +23,7 @@ const LeadsTab = ({ token }) => {
       const response = await axios.get(`${BACKEND_URL}/api/leads`, config);
       setLeads(response.data);
     } catch (error) {
-      toast.error('Lead'ler yüklenemedi');
+      toast.error('Leadler yüklenemedi');
     }
   };
 
