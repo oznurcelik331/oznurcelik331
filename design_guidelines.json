@@ -1,0 +1,195 @@
+{
+  "identity": {
+    "name": "Kozsağ Group İnşaat",
+    "tone": "Prestigious, Grounded, Timeless, Professional",
+    "aesthetic": "Modern Stone Architecture",
+    "mission": "Building legacy through natural stone and modern engineering."
+  },
+  "typography": {
+    "primary_font": "Playfair Display",
+    "secondary_font": "Manrope",
+    "font_weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+      "black": 900
+    },
+    "usage": {
+      "h1": "font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none text-primary",
+      "h2": "font-serif text-4xl md:text-5xl font-semibold tracking-tight text-primary",
+      "h3": "font-serif text-2xl md:text-3xl font-medium text-primary",
+      "body": "font-sans text-base md:text-lg text-muted-foreground leading-relaxed",
+      "caption": "font-sans text-sm uppercase tracking-widest text-accent font-bold",
+      "nav": "font-sans text-sm font-medium tracking-wide uppercase"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#2D2D2D",
+        "foreground": "#FFFFFF",
+        "description": "Deep Charcoal / Slate - Represents strength and foundation"
+      },
+      "secondary": {
+        "DEFAULT": "#E6E2DD",
+        "foreground": "#2D2D2D",
+        "description": "Warm Limestone - The canvas, natural and calming"
+      },
+      "accent": {
+        "DEFAULT": "#B87333",
+        "foreground": "#FFFFFF",
+        "description": "Antique Copper - Luxury highlights, metallic warmth"
+      },
+      "muted": {
+        "DEFAULT": "#F5F5F0",
+        "foreground": "#666666",
+        "description": "Soft Sand - Backgrounds and subtle separation"
+      },
+      "success": {
+        "DEFAULT": "#556B2F",
+        "description": "Olive Grove - Biophilic connection, nature"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to bottom, rgba(45,45,45,0.3), rgba(45,45,45,0.8))",
+      "metallic_sheen": "linear-gradient(135deg, #B87333 0%, #D4AF37 50%, #B87333 100%)"
+    }
+  },
+  "visual_enhancers": {
+    "radius": {
+      "default": "rounded-sm",
+      "button": "rounded-none",
+      "card": "rounded-sm"
+    },
+    "shadows": {
+      "card": "0 10px 30px -10px rgba(45, 45, 45, 0.1)",
+      "floating": "0 20px 40px -10px rgba(45, 45, 45, 0.2)",
+      "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")",
+      "stone_grain": "Subtle grain overlay on solid backgrounds to mimic stone texture"
+    }
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid": "Bento / Masonry Grid",
+      "spacing": "Generous (py-24, gap-12)",
+      "container": "container mx-auto px-6 md:px-12",
+      "alignment": "Asymmetric balance - Offset text against large imagery"
+    },
+    "dashboard": {
+      "grid": "Dense Control Room Grid (grid-cols-4)",
+      "spacing": "Compact (p-6, gap-4)",
+      "style": "Clean, card-based, high data density"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 rounded-none px-8 py-4 font-medium tracking-wide transition-all duration-300 hover:translate-y-[-2px]",
+      "secondary": "border border-primary text-primary hover:bg-primary hover:text-white rounded-none px-8 py-4 transition-all duration-300",
+      "accent": "bg-accent text-white hover:bg-accent/90 rounded-none px-8 py-4 shadow-lg hover:shadow-xl transition-all"
+    },
+    "cards": {
+      "project": "group relative overflow-hidden bg-muted aspect-[4/5] cursor-pointer",
+      "feature": "bg-white p-8 border-l-4 border-accent shadow-sm hover:shadow-md transition-all duration-300",
+      "dashboard": "bg-white border border-border shadow-sm p-6"
+    },
+    "navigation": {
+      "style": "Glassmorphism (Frosted Quartz)",
+      "classes": "bg-white/80 backdrop-blur-md border-b border-white/20 sticky top-0 z-50"
+    }
+  },
+  "motion": {
+    "principles": "Slow, Deliberate, Heavy (Stone-like)",
+    "transitions": {
+      "default": "transition-all duration-500 ease-out",
+      "hover": "duration-300 ease-in-out"
+    },
+    "animations": {
+      "fade_up": "animate-in fade-in slide-in-from-bottom-8 duration-700",
+      "reveal": "group-hover:opacity-100 transition-opacity duration-500"
+    }
+  },
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1548386704-23fc0135faab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Luxury stone villa pool sunset - Hero Background",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1702432558737-86298f7f716a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Pool with sunset background - Alternate Hero",
+        "category": "hero"
+      }
+    ],
+    "projects": [
+      {
+        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg",
+        "description": "Actual Project: Stone entrance construction",
+        "category": "portfolio"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg",
+        "description": "Actual Project: Stone house exterior",
+        "category": "portfolio"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg",
+        "description": "Actual Project: Pool area construction",
+        "category": "portfolio"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/td5or4px_4.jpeg",
+        "description": "Actual Project: Stone detail",
+        "category": "portfolio"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/po3aigs4_5.jpeg",
+        "description": "Actual Project: Landscape integration",
+        "category": "portfolio"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.pexels.com/photos/7937709/pexels-photo-7937709.jpeg",
+        "description": "Architect reviewing blueprints",
+        "category": "about"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6568671/pexels-photo-6568671.jpeg",
+        "description": "Construction team meeting",
+        "category": "about"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "general": "You are building a high-end corporate website for 'Kozsağ Group İnşaat'. The vibe is 'Anatolian Luxury' - rugged stone meets modern elegance. Use the provided user assets for the portfolio section to ensure authenticity.",
+    "chatbot": "Integrate the AI Chatbot using the 'Emergent LLM key'. It should be a floating widget available on all pages, styled with the 'Accent' color (#B87333) to stand out but remain elegant.",
+    "crm": "The CRM dashboard should be clean and functional. Use the 'Control Room' grid strategy. It is an internal tool, so prioritize data density and clarity over artistic whitespace.",
+    "language": "The website MUST be in Turkish. Ensure all copy, labels, and placeholders are in Turkish.",
+    "tech_stack": "React (Frontend), FastAPI (Backend), MongoDB (Database). Use Shadcn UI for interactive components but style them to match the 'Stone' aesthetic (square corners, earthy borders)."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
