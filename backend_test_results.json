@@ -1,0 +1,247 @@
+{
+  "total_tests": 16,
+  "passed_tests": 13,
+  "failed_tests": 3,
+  "success_rate": 81.25,
+  "failed_test_details": [
+    {
+      "test_name": "Get Leads (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.858443"
+    },
+    {
+      "test_name": "Create Project (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.896560"
+    },
+    {
+      "test_name": "Get Analytics (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.970323"
+    }
+  ],
+  "all_test_results": [
+    {
+      "test_name": "User Registration",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTdhYjA0NWMtNjY4Ny00NjczLTlhOTItOWUyN2Q4NGQzZTQ3IiwiZW1haWwiOiJhZG1pbkBrb3pzYWcuY29tIiwiZXhwIjoxNzY2NDIyMjUwfQ.sGvLjYDoAIk-p9FWIQa-f9tpPAHY2He2lp-UZd_zvk8",
+        "user": {
+          "id": "57ab045c-6687-4673-9a92-9e27d84d3e47",
+          "email": "admin@kozsag.com",
+          "name": "Admin User",
+          "role": "admin",
+          "created_at": "2025-12-15T16:50:50.584463Z"
+        }
+      },
+      "timestamp": "2025-12-15T16:50:50.821358"
+    },
+    {
+      "test_name": "Get Leads (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.858443"
+    },
+    {
+      "test_name": "Create Project (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.896560"
+    },
+    {
+      "test_name": "Get Analytics (Unauthorized)",
+      "success": false,
+      "details": "Status: 403 (expected 401), Response: {'detail': 'Not authenticated'}",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:50.970323"
+    },
+    {
+      "test_name": "Create Lead",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "id": "577113c8-a6b7-4bc2-8c91-2dc4aed024f0",
+        "name": "Test Müşteri",
+        "email": "test@example.com",
+        "phone": "+90 532 123 45 67",
+        "message": "Taş villa inşaatı için bilgi almak istiyorum.",
+        "status": "new",
+        "source": "website",
+        "created_at": "2025-12-15T16:50:51.007637Z",
+        "updated_at": "2025-12-15T16:50:51.007641Z"
+      },
+      "timestamp": "2025-12-15T16:50:51.012377"
+    },
+    {
+      "test_name": "Get Leads",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": [
+        {
+          "id": "577113c8-a6b7-4bc2-8c91-2dc4aed024f0",
+          "name": "Test Müşteri",
+          "email": "test@example.com",
+          "phone": "+90 532 123 45 67",
+          "message": "Taş villa inşaatı için bilgi almak istiyorum.",
+          "status": "new",
+          "source": "website",
+          "created_at": "2025-12-15T16:50:51.007637Z",
+          "updated_at": "2025-12-15T16:50:51.007641Z"
+        },
+        {
+          "id": "5ccfbd9f-ac0d-45b6-90bb-717ea89419b7",
+          "name": "Test Müşteri",
+          "email": "test@example.com",
+          "phone": "05551234567",
+          "message": "Test mesajı",
+          "status": "new",
+          "source": "website",
+          "created_at": "2025-12-15T16:49:03.025826Z",
+          "updated_at": "2025-12-15T16:49:03.025829Z"
+        }
+      ],
+      "timestamp": "2025-12-15T16:50:51.057746"
+    },
+    {
+      "test_name": "Update Lead Status",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "message": "Lead updated"
+      },
+      "timestamp": "2025-12-15T16:50:51.093025"
+    },
+    {
+      "test_name": "Create Project",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "id": "90a514be-0d9a-4e57-bec2-d155ddeaf5a0",
+        "title": "Test Taş Villa Projesi",
+        "description": "Modern taş villa inşaatı",
+        "location": "İzmir",
+        "area": "350 m²",
+        "status": "planning",
+        "start_date": null,
+        "completion_date": null,
+        "images": [],
+        "lead_id": null,
+        "created_at": "2025-12-15T16:50:51.126938Z"
+      },
+      "timestamp": "2025-12-15T16:50:51.142252"
+    },
+    {
+      "test_name": "Get Projects",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": [
+        {
+          "id": "90a514be-0d9a-4e57-bec2-d155ddeaf5a0",
+          "title": "Test Taş Villa Projesi",
+          "description": "Modern taş villa inşaatı",
+          "location": "İzmir",
+          "area": "350 m²",
+          "status": "planning",
+          "start_date": null,
+          "completion_date": null,
+          "images": [],
+          "lead_id": null,
+          "created_at": "2025-12-15T16:50:51.126938Z"
+        }
+      ],
+      "timestamp": "2025-12-15T16:50:51.182460"
+    },
+    {
+      "test_name": "Create Quote",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "id": "b050d898-e6e5-4191-98cf-1833d2c782e1",
+        "lead_id": "577113c8-a6b7-4bc2-8c91-2dc4aed024f0",
+        "project_type": "Taş Villa",
+        "area": 350.0,
+        "estimated_cost": 2500000.0,
+        "details": "350 m² taş villa inşaatı, peyzaj dahil",
+        "status": "draft",
+        "valid_until": "2026-01-14T16:50:51.212156Z",
+        "created_at": "2025-12-15T16:50:51.212199Z"
+      },
+      "timestamp": "2025-12-15T16:50:51.240837"
+    },
+    {
+      "test_name": "Get Quotes",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": [
+        {
+          "id": "b050d898-e6e5-4191-98cf-1833d2c782e1",
+          "lead_id": "577113c8-a6b7-4bc2-8c91-2dc4aed024f0",
+          "project_type": "Taş Villa",
+          "area": 350.0,
+          "estimated_cost": 2500000.0,
+          "details": "350 m² taş villa inşaatı, peyzaj dahil",
+          "status": "draft",
+          "valid_until": "2026-01-14T16:50:51.212156Z",
+          "created_at": "2025-12-15T16:50:51.212199Z"
+        }
+      ],
+      "timestamp": "2025-12-15T16:50:51.274818"
+    },
+    {
+      "test_name": "Get Analytics",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "total_leads": 2,
+        "new_leads": 1,
+        "active_projects": 1,
+        "quotes_sent": 1,
+        "conversion_rate": 50.0
+      },
+      "timestamp": "2025-12-15T16:50:51.320122"
+    },
+    {
+      "test_name": "Analytics Structure",
+      "success": true,
+      "details": "All required fields present",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:50:51.320745"
+    },
+    {
+      "test_name": "AI Chat - Turkish Query",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "response": "Merhaba, elbette yardımcı olurum.  \nKozsağ Group olarak özellikle taş ev inşaatı konusunda uzmanlaşmış bir firmayız.\n\nKısaca taş ev inşaatımız hakkında:\n\n**1. Kullandığımız Sistem ve Malzemeler**\n- Doğal taş ile taşıyıcı duvar veya dış cephe kaplaması\n- Sağlam betonarme taşıyıcı sistem (deprem yönetmeliğine uygun)\n- Isı ve su yalıtımı yapılmış dış duvarlar\n- Uzun ömürlü çatı kaplaması (kiremit vb.)\n- Doğal taşla uyumlu ahşap detaylar (teras, doğrama, pergola vb.)\n\n**2. Avantajları**\n- Çok dayanıklı ve uzun ömürlü yapı\n- Yazın serin, kışın daha dengeli sıcaklık\n- Yüksek estetik ve prestijli görünüm\n- Bulunduğu bölgenin doğasına uyumlu mimari\n\n**3. Proje Süreci Nasıl İşliyor?**\n- Arsanızın konumuna ve imar durumuna göre ön değerlendirme\n- İhtiyaçlarınız ve bütçenize göre mimari tasarım (m², oda sayısı, tarz vb.)\n- Statik, elektrik, mekanik projelerin hazırlanması\n- Ruhsat süreçlerinin takibi (talebe göre)\n- Anahtar teslim veya kaba inşaat seçenekleri\n\n**4. Fiyatlandırma**\nTaş evlerde maliyet;  \n- m² büyüklüğü  \n- Kullanılacak taş türü ve malzeme kalitesi  \n- Tek kat / dubleks / tripleks olması  \n- Bölge ve arsanın durumu (eğim, zemin, ulaşım)  \ngibi kriterlere göre değişiyor.\n\nNet bir fiyat aralığı ya da örnek bir proje üzerinden yaklaşık maliyet paylaşabilmemiz için bazı bilgilere ihtiyaç duyuyoruz.\n\nİsterseniz:\n- Hangi şehir / ilçe için düşündüğünüzü  \n- Yaklaşık kaç m² bir ev hayal ettiğinizi  \n- Tek kat mı, dubleks mi istediğinizi  \n\nyazabilirsiniz; size genel bir maliyet aralığı anlatabilirim.\n\nDaha detaylı çalışma, 3D proje, kesin fiyat teklifi ve keşif için ise size en uygun çözümü sunabilmemiz adına **iletişim formumuzu doldurmanızı** öneririm. Form üzerinden:\n- İsim–soyisim  \n- Arsa konumu  \n- Tahmini m²  \n- Bütçe aralığı  \n- Telefon / e-posta  \n\nbilgilerinizi ilettiğinizde proje ekibimiz sizinle doğrudan iletişime geçip detaylı bilgilendirme ve teklif hazırlayabilir.\n\nNasıl bir taş ev düşündüğünüzü kısaca tarif ederseniz, buradan da kabaca yönlendirme yapabilirim.",
+        "session_id": "f6141591-b3b4-411f-b91a-375e6def6cf5"
+      },
+      "timestamp": "2025-12-15T16:51:05.540180"
+    },
+    {
+      "test_name": "Chat Response Content",
+      "success": true,
+      "details": "Response length: 2006 chars",
+      "response_data": null,
+      "timestamp": "2025-12-15T16:51:05.540763"
+    },
+    {
+      "test_name": "AI Chat - Follow-up Query",
+      "success": true,
+      "details": "Status: 200 (expected 200)",
+      "response_data": {
+        "response": "Elbette, yardımcı olabilirim.\n\nTaş ev ve villa projelerinde fiyatlar;  \n- Arsanın konumu ve eğimi  \n- Toplam m²  \n- Tek kat / dubleks / tripleks olması  \n- Kullanılacak malzeme kalitesi (doğal taş türü, çatı kaplaması, doğrama, ısı yalıtımı vb.)  \n- İç mekân detayları (zemin kaplamaları, mutfak & banyo kalitesi, ısıtma sistemi vb.)  \n\ngibi birçok faktöre göre değişiyor. Bu yüzden net bir m² fiyatı veya toplam bedel söyleyebilmem için proje detaylarına ihtiyaç var.\n\nSize en sağlıklı ve şeffaf fiyat teklifini sunmamız için, kısaca şu bilgileri paylaşabilir misiniz?  \n1. Yaklaşık kaç m² bir taş ev/villa düşünüyorsunuz?  \n2. Arsanız var mı, varsa hangi il/ilçede?  \n3. Tek kat mı, dubleks mi istiyorsunuz?  \n4. Bütçe aralığınız nedir? (Örn: “3–4 milyon TL civarı” gibi)\n\nDilerseniz web sitemizdeki iletişim formunu doldurarak ya da iletişim bilgilerinizle birlikte bu bilgileri ileterek, ücretsiz keşif ve detaylı fiyat teklifi hazırlayabiliriz. İsterseniz size örnek bir fiyatlandırma senaryosu da yazabilirim (örneğin 120 m² tek kat taş ev için yaklaşık maliyet aralığı gibi).",
+        "session_id": "f6141591-b3b4-411f-b91a-375e6def6cf5"
+      },
+      "timestamp": "2025-12-15T16:51:12.151615"
+    }
+  ]
+}
