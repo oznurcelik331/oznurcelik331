@@ -59,11 +59,18 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="flex-shrink-0 mt-1 text-accent" />
-                <span className="font-sans text-sm opacity-80">İzmir, Türkiye</span>
+                <span className="font-sans text-sm opacity-80">
+                  Yaya Mah. E-87 Karayolu Kenarı Sk. No: 31/B<br />
+                  İç Kapı No: 14 Gömeç/Balıkesir
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone size={18} className="flex-shrink-0 mt-1 text-accent" />
-                <span className="font-sans text-sm opacity-80">+90 (232) 123 45 67</span>
+                <div className="font-sans text-sm opacity-80">
+                  <div>0 544 852 63 71</div>
+                  <div>0 554 852 63 51</div>
+                  <div>0 537 330 04 42</div>
+                </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail size={18} className="flex-shrink-0 mt-1 text-accent" />

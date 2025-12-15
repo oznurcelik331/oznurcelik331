@@ -41,12 +41,12 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Adres',
-      content: 'İzmir, Türkiye',
+      content: 'Yaya Mah. E-87 Karayolu Kenarı Sk. No: 31/B İç Kapı No: 14 Gömeç/Balıkesir',
     },
     {
       icon: <Phone size={24} />,
       title: 'Telefon',
-      content: '+90 (232) 123 45 67',
+      content: '0 544 852 63 71 / 0 554 852 63 51 / 0 537 330 04 42',
     },
     {
       icon: <Mail size={24} />,
