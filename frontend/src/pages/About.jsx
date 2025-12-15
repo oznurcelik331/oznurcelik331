@@ -55,8 +55,8 @@ const About = () => {
             </div>
             <div>
               <img
-                src="https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/td5or4px_4.jpeg"
-                alt="Taş Detay"
+                src="https://customer-assets.emergentagent.com/job_insaatech/artifacts/ssaegecb_16.jpeg"
+                alt="Kozsağ Group İnşaat"
                 className="w-full h-[600px] object-cover card-shadow"
               />
             </div>
