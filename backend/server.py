@@ -145,8 +145,8 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(s
         token = credentials.credentials
         payload = jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGORITHM])
         return payload
-    except:
-        raise HTTPException(status_code=401, detail="Invalid authentication")
+    except Exception as e:
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
 # Auth routes
 @api_router.post("/auth/register")
