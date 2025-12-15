@@ -1,195 +1,161 @@
 {
-  "identity": {
-    "name": "Kozsağ Group İnşaat",
-    "tone": "Prestigious, Grounded, Timeless, Professional",
-    "aesthetic": "Modern Stone Architecture",
-    "mission": "Building legacy through natural stone and modern engineering."
-  },
-  "typography": {
-    "primary_font": "Playfair Display",
-    "secondary_font": "Manrope",
-    "font_weights": {
-      "light": 300,
-      "regular": 400,
-      "medium": 500,
-      "bold": 700,
-      "black": 900
+  "design_system": {
+    "identity": {
+      "name": "KOZSAĞ GROUP İNŞAAT",
+      "archetype": "Luxury / Architectural / Timeless",
+      "vibe": "The Monolith. Solid, expensive, serene. A mix of raw stone textures and refined metal accents.",
+      "core_values": ["Prestige", "Craftsmanship", "Silence", "Strength"]
     },
-    "usage": {
-      "h1": "font-serif text-5xl md:text-7xl font-bold tracking-tight leading-none text-primary",
-      "h2": "font-serif text-4xl md:text-5xl font-semibold tracking-tight text-primary",
-      "h3": "font-serif text-2xl md:text-3xl font-medium text-primary",
-      "body": "font-sans text-base md:text-lg text-muted-foreground leading-relaxed",
-      "caption": "font-sans text-sm uppercase tracking-widest text-accent font-bold",
-      "nav": "font-sans text-sm font-medium tracking-wide uppercase"
-    }
-  },
-  "colors": {
-    "palette": {
-      "primary": {
-        "DEFAULT": "#2D2D2D",
-        "foreground": "#FFFFFF",
-        "description": "Deep Charcoal / Slate - Represents strength and foundation"
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif"
       },
-      "secondary": {
-        "DEFAULT": "#E6E2DD",
-        "foreground": "#2D2D2D",
-        "description": "Warm Limestone - The canvas, natural and calming"
-      },
-      "accent": {
-        "DEFAULT": "#B87333",
-        "foreground": "#FFFFFF",
-        "description": "Antique Copper - Luxury highlights, metallic warmth"
-      },
-      "muted": {
-        "DEFAULT": "#F5F5F0",
-        "foreground": "#666666",
-        "description": "Soft Sand - Backgrounds and subtle separation"
-      },
-      "success": {
-        "DEFAULT": "#556B2F",
-        "description": "Olive Grove - Biophilic connection, nature"
+      "usage_rules": {
+        "h1": "text-6xl md:text-8xl font-serif tracking-tight leading-[0.9] text-primary",
+        "h2": "text-4xl md:text-6xl font-serif tracking-tight text-primary mb-12",
+        "h3": "text-2xl md:text-3xl font-serif font-medium text-primary",
+        "body": "text-base md:text-lg font-sans text-muted-foreground leading-relaxed",
+        "label": "text-xs font-sans uppercase tracking-[0.2em] text-accent font-bold",
+        "nav": "text-sm font-sans uppercase tracking-widest font-medium hover:text-accent transition-colors"
       }
     },
-    "gradients": {
-      "hero_overlay": "linear-gradient(to bottom, rgba(45,45,45,0.3), rgba(45,45,45,0.8))",
-      "metallic_sheen": "linear-gradient(135deg, #B87333 0%, #D4AF37 50%, #B87333 100%)"
-    }
-  },
-  "visual_enhancers": {
-    "radius": {
-      "default": "rounded-sm",
-      "button": "rounded-none",
-      "card": "rounded-sm"
+    "colors": {
+      "palette": {
+        "background": "#F5F5F0",
+        "foreground": "#2D2D2D",
+        "primary": "#2D2D2D",
+        "secondary": "#E6E2DD",
+        "accent": "#B87333",
+        "muted": "#F5F5F0",
+        "border": "#E6E2DD"
+      },
+      "tailwind_config_extension": {
+        "colors": {
+          "stone": {
+            "50": "#FBFBF9",
+            "100": "#F5F5F0",
+            "200": "#E6E2DD",
+            "300": "#D6D0C4",
+            "800": "#4A4A44",
+            "900": "#2D2D2D"
+          },
+          "copper": {
+            "DEFAULT": "#B87333",
+            "light": "#D49A6A",
+            "dark": "#8F5926"
+          }
+        }
+      }
     },
-    "shadows": {
-      "card": "0 10px 30px -10px rgba(45, 45, 45, 0.1)",
-      "floating": "0 20px 40px -10px rgba(45, 45, 45, 0.2)",
-      "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_spacing": "py-24 md:py-32 lg:py-40",
+      "element_gap": "gap-8 md:gap-12"
     },
-    "textures": {
-      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")",
-      "stone_grain": "Subtle grain overlay on solid backgrounds to mimic stone texture"
-    }
-  },
-  "layout_strategies": {
-    "marketing": {
-      "grid": "Bento / Masonry Grid",
-      "spacing": "Generous (py-24, gap-12)",
-      "container": "container mx-auto px-6 md:px-12",
-      "alignment": "Asymmetric balance - Offset text against large imagery"
-    },
-    "dashboard": {
-      "grid": "Dense Control Room Grid (grid-cols-4)",
-      "spacing": "Compact (p-6, gap-4)",
-      "style": "Clean, card-based, high data density"
+    "visual_enhancers": {
+      "radius": "rounded-none",
+      "shadows": {
+        "card": "shadow-[0_20px_40px_-15px_rgba(45,45,45,0.1)]",
+        "float": "shadow-[0_30px_60px_-15px_rgba(45,45,45,0.15)]"
+      },
+      "textures": {
+        "noise": "opacity-5 pointer-events-none fixed inset-0 z-50 mix-blend-multiply",
+        "glass": "bg-stone-100/80 backdrop-blur-md border-b border-stone-200/50"
+      }
     }
   },
   "components": {
-    "buttons": {
-      "primary": "bg-primary text-white hover:bg-primary/90 rounded-none px-8 py-4 font-medium tracking-wide transition-all duration-300 hover:translate-y-[-2px]",
-      "secondary": "border border-primary text-primary hover:bg-primary hover:text-white rounded-none px-8 py-4 transition-all duration-300",
-      "accent": "bg-accent text-white hover:bg-accent/90 rounded-none px-8 py-4 shadow-lg hover:shadow-xl transition-all"
+    "HeroSection": {
+      "description": "Full-screen cinematic experience. Image dominates. Text is minimal and anchored.",
+      "layout": "h-screen relative overflow-hidden flex items-end pb-24",
+      "elements": [
+        "Background Image: Full cover, slow zoom animation (scale 1.0 to 1.05 over 20s).",
+        "Overlay: Gradient from bottom-black/60 to transparent (h-1/2).",
+        "Content: Bottom-left aligned. Massive H1 ('STONE & LEGACY'). Small refined CTA.",
+        "Scroll Indicator: Animated vertical line or mouse icon at bottom center."
+      ]
     },
-    "cards": {
-      "project": "group relative overflow-hidden bg-muted aspect-[4/5] cursor-pointer",
-      "feature": "bg-white p-8 border-l-4 border-accent shadow-sm hover:shadow-md transition-all duration-300",
-      "dashboard": "bg-white border border-border shadow-sm p-6"
+    "ProjectGallery": {
+      "description": "The 'Tamamlanan Projeler' section. A pure visual grid. No text clutter.",
+      "layout": "Grid Mode A (Tetris). grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8",
+      "item_style": "aspect-[3/4] or aspect-square relative group overflow-hidden cursor-pointer",
+      "interaction": "Image scale on hover. NO TEXT visible by default. On hover, a very subtle overlay with project name can appear, OR keep it purely visual as requested.",
+      "rule": "STRICTLY NO TEXT UNDER IMAGES. The grid must look like an art gallery wall."
     },
-    "navigation": {
-      "style": "Glassmorphism (Frosted Quartz)",
-      "classes": "bg-white/80 backdrop-blur-md border-b border-white/20 sticky top-0 z-50"
-    }
-  },
-  "motion": {
-    "principles": "Slow, Deliberate, Heavy (Stone-like)",
-    "transitions": {
-      "default": "transition-all duration-500 ease-out",
-      "hover": "duration-300 ease-in-out"
+    "AboutSection": {
+      "description": "Asymmetrical layout. Text on one side, massive image on the other.",
+      "layout": "grid grid-cols-1 lg:grid-cols-12 gap-12 items-center",
+      "typography": "Use 'label' style for 'OUR PHILOSOPHY'. H2 for 'Building for Eternity'.",
+      "decoration": "Use a vertical line separator (border-l border-copper) for the text block."
     },
-    "animations": {
-      "fade_up": "animate-in fade-in slide-in-from-bottom-8 duration-700",
-      "reveal": "group-hover:opacity-100 transition-opacity duration-500"
+    "ContactForm": {
+      "description": "Minimalist luxury. No boxy inputs.",
+      "input_style": "bg-transparent border-b border-stone-300 focus:border-copper px-0 py-4 rounded-none outline-none transition-colors placeholder:text-stone-400",
+      "button_style": "bg-primary text-white px-12 py-4 hover:bg-copper transition-colors uppercase tracking-widest text-sm"
+    },
+    "Chatbot": {
+      "description": "A premium concierge, not a support bot.",
+      "style": "Fixed bottom-right. Button is a circle with a refined icon (not a robot face). Window is clean, sharp corners, minimal shadow.",
+      "color": "bg-primary text-white"
     }
   },
   "image_urls": {
-    "hero": [
-      {
-        "url": "https://images.unsplash.com/photo-1548386704-23fc0135faab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85",
-        "description": "Luxury stone villa pool sunset - Hero Background",
-        "category": "hero"
-      },
-      {
-        "url": "https://images.unsplash.com/photo-1702432558737-86298f7f716a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBzdG9uZSUyMHZpbGxhJTIwd2l0aCUyMHBvb2wlMjBzdW5zZXR8ZW58MHx8fHwxNzY1ODE2OTQzfDA&ixlib=rb-4.1.0&q=85",
-        "description": "Pool with sunset background - Alternate Hero",
-        "category": "hero"
-      }
-    ],
+    "hero": {
+      "url": "https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg",
+      "alt": "Luxury stone villa exterior at dusk"
+    },
     "projects": [
       {
-        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg",
-        "description": "Actual Project: Stone entrance construction",
-        "category": "portfolio"
+        "url": "https://images.pexels.com/photos/35143437/pexels-photo-35143437.jpeg",
+        "alt": "Minimalist apartment facade"
       },
       {
-        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg",
-        "description": "Actual Project: Stone house exterior",
-        "category": "portfolio"
+        "url": "https://images.pexels.com/photos/5845674/pexels-photo-5845674.jpeg",
+        "alt": "Modern stone residence"
       },
       {
-        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg",
-        "description": "Actual Project: Pool area construction",
-        "category": "portfolio"
+        "url": "https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg",
+        "alt": "Glass and concrete architecture"
       },
       {
-        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/td5or4px_4.jpeg",
-        "description": "Actual Project: Stone detail",
-        "category": "portfolio"
+        "url": "https://images.pexels.com/photos/35177204/pexels-photo-35177204.jpeg",
+        "alt": "Stone texture detail"
       },
       {
-        "url": "https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/po3aigs4_5.jpeg",
-        "description": "Actual Project: Landscape integration",
-        "category": "portfolio"
+        "url": "https://images.pexels.com/photos/5374862/pexels-photo-5374862.jpeg",
+        "alt": "Interior stone wall"
+      },
+      {
+        "url": "https://images.pexels.com/photos/35141403/pexels-photo-35141403.jpeg",
+        "alt": "Modern building angle"
       }
     ],
-    "about": [
-      {
-        "url": "https://images.pexels.com/photos/7937709/pexels-photo-7937709.jpeg",
-        "description": "Architect reviewing blueprints",
-        "category": "about"
-      },
-      {
-        "url": "https://images.pexels.com/photos/6568671/pexels-photo-6568671.jpeg",
-        "description": "Construction team meeting",
-        "category": "about"
-      }
-    ]
+    "about": {
+      "team": "https://images.pexels.com/photos/8482821/pexels-photo-8482821.jpeg",
+      "texture": "https://images.pexels.com/photos/35177204/pexels-photo-35177204.jpeg"
+    }
   },
   "instructions_to_main_agent": {
-    "general": "You are building a high-end corporate website for 'Kozsağ Group İnşaat'. The vibe is 'Anatolian Luxury' - rugged stone meets modern elegance. Use the provided user assets for the portfolio section to ensure authenticity.",
-    "chatbot": "Integrate the AI Chatbot using the 'Emergent LLM key'. It should be a floating widget available on all pages, styled with the 'Accent' color (#B87333) to stand out but remain elegant.",
-    "crm": "The CRM dashboard should be clean and functional. Use the 'Control Room' grid strategy. It is an internal tool, so prioritize data density and clarity over artistic whitespace.",
-    "language": "The website MUST be in Turkish. Ensure all copy, labels, and placeholders are in Turkish.",
-    "tech_stack": "React (Frontend), FastAPI (Backend), MongoDB (Database). Use Shadcn UI for interactive components but style them to match the 'Stone' aesthetic (square corners, earthy borders)."
+    "general": "You are building a site for a client who values SILENCE and SPACE. Do not clutter. If in doubt, add more padding.",
+    "file_structure": "Use the existing /app/frontend/src structure. Modify App.css for global styles, but prefer Tailwind classes in components.",
+    "critical_rules": [
+      "Do NOT use 'Inter' font. Use Playfair Display for headings, Manrope for body.",
+      "Do NOT put text under project images. The gallery must be clean.",
+      "Use the 'stone' color palette defined above. Avoid pure white (#FFFFFF) for backgrounds; use #F5F5F0.",
+      "Ensure the 'Tamamlanan Projeler' section uses the provided project images in a masonry or grid layout.",
+      "The Chatbot should feel like a luxury service (Concierge), not a tech support tool."
+    ],
+    "animations": "Use 'framer-motion' for scroll reveals. Images should have a slow parallax effect. Text should fade up slowly."
   },
-  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
-    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
-    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
-    "Create depth through layered design elements with z-index hierarchy",
-    "Use glass-morphism effects with backdrop filters (12-24px blur)",
-    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
-    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
-    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
-    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
-    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
-    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
-    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
-    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
-    "Prioritize using pre-existing components from src/components/ui when applicable",
-    "Create new components that match the style and conventions of existing components when needed",
-    "Examine existing components to understand the project's component patterns before creating new ones",
-    "Components MUST use named exports (export const ComponentName = ...)",
-    "Pages MUST use default exports (export default function PageName() {...})",
-    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
-  ]
+  "universal_guidelines": {
+    "design_philosophy": "Fusion over Imitation. Emotion First. Content is King.",
+    "anti_patterns": [
+      "Purple/Teal CTAs",
+      "Inter font everywhere",
+      "Center-everything layout",
+      "Gradient overload"
+    ],
+    "accessibility": "Ensure contrast ratios are met. Use aria-labels for image-only buttons."
+  }
 }
