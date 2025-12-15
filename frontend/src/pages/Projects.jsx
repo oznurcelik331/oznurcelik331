@@ -10,6 +10,11 @@ const Projects = () => {
     { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/293dd07n_8.jpeg' },
     { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/fw4ua0ox_9.jpeg' },
     { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/bsh2npvc_10.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/6wpk62xx_11.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/yu99d9kd_12.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/czzj5htz_13.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/52lmy3lw_14.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/gj7lhz99_15.jpeg' },
   ];
 
   return (

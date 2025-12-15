@@ -4,8 +4,8 @@ import { ArrowRight, Building2, CheckCircle, Award } from 'lucide-react';
 const Home = () => {
   const projects = [
     { image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/eq3r10ut_1.jpeg' },
-    { image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/drf0lqug_2.jpeg' },
-    { image: 'https://customer-assets.emergentagent.com/job_c56545f5-d40a-4050-af6e-e70f33d426ef/artifacts/1bchysas_3.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/ikfxog8t_6.jpeg' },
+    { image: 'https://customer-assets.emergentagent.com/job_insaatech/artifacts/6wpk62xx_11.jpeg' },
   ];
 
   const features = [
